@@ -10,12 +10,12 @@ end
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 def position_taken?(array,index)
   if array[index] == " "
-    return false
+    return true
   elsif array[index] == nil
     return false
   elsif array[index] == ""
-    return false
-  else
     return true
+  else
+    return false
   end
 end
